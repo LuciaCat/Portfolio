@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Junior Fullstack Developer"];
+  const toRotate = [ "Jr. Web Developer", "Jr. Fullstack Developer", "Jr. Frontend Developer", "Jr. Backend Developer", "Assistente Tecnico"];
   const period = 2000;
 
   useEffect(() => {
@@ -55,10 +55,20 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Ciao! Io sono Lucia`} <br/><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Junior Fullstack Developer", "Junior Web Designer", "Creator" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Ho una grande passione per l’informatica, infatti spinta da questa ho frequentato dei corsi sulla programmazione Front-end e Back-end, sviluppando conoscenze di progettazione e programmazione. Ho inoltre dimistichezza con l’utilizzo di software di progettazione e design come Figma e Canva. Sono una persona orientata all’obiettivo e all’azione, proattiva e intraprendente, disposta a mettersi in gioco. </p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <span className="tagline">Benvenut* nel mio Portfolio</span>
+                <h1>{`Ciao! Io sono Lucia`} <br/><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Jr. Web Developer", "Jr. Fullstack Developer", "Jr. Frontend Developer", "Jr. Backend Developer", "Assistente Tecnico"]'><span className="wrap">{text}</span></span></h1>
+                  <p> 
+                    La mia passione per l'informatica mi ha spinto a seguire corsi dedicati alla programmazione
+                    Front-end e Back-end, attraverso i quali ho sviluppato solide conoscenze di progettazione e 
+                    programmazione. Durante questi corsi, ho acquisito competenze nell'utilizzo di linguaggi 
+                    come HTML, CSS, JavaScript, C#, Java e framework come React, Bootstrap e ASP.NET. Inoltre, 
+                    ho sviluppato una buona familiarità con software di progettazione e design come Figma e 
+                    Canva, che mi hanno permesso di creare interfacce utente accattivanti e intuitive. 
+                    Conoscenza approfondita del sistema Windows e macOS, del pacchetto Office 365.
+                    Sono una persona orientata all'obiettivo e all'azione, sempre motivata a imparare e 
+                    migliorare le mie competenze nel campo dell'informatica.  
+                  </p>
+                  {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
               </div>}
             </TrackVisibility>
           </Col>
