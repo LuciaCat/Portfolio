@@ -4,6 +4,8 @@ import js from "../assets/img/javascript.svg";
 import react from "../assets/img/react.svg";
 import cSharp from "../assets/img/cSharp.svg";
 import java from "../assets/img/java.svg";
+import sql from "../assets/img/sql.svg";
+import dotnet from "../assets/img/dotnet.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -62,9 +64,18 @@ export const Skills = () => {
                                 <h5>C#</h5>
                             </div>
                             <div className="item">
+                                <img src={sql} alt="LogoSql" />
+                                <h5>SQL</h5>
+                            </div>
+                            <div className="item">
                                 <img src={react} alt="LogoReact" />
                                 <h5>React</h5>
                             </div>
+                            <div className="item">
+                                <img src={dotnet} alt="Logodotnet" />
+                                <h5>.NET</h5>
+                            </div>
+                           
                         </Carousel>
                     </div>
                 </div>
